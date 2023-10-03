@@ -35,16 +35,16 @@ const addCoins = (coin) => {
 }
 const minusCoins = (coin) => {
     if (coin == "quarter" && quarters >= 1){
-        quarters ++;
+        quarters --;
     }
     if (coin == "dime" && dimes >= 1){
-        dimes ++;
+        dimes --;
     }
     if (coin == "nickel" && nickels >= 1){
-        nickels ++;
+        nickels --;
     }
     if (coin == "penny" && pennys >= 1){
-        pennys ++;
+        pennys --;
     }
     display();
 }
