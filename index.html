@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Counter</title>
+    <script src="script.js" async></script>
+</head>
+<body>
+    <h1>Count Your Coins!</h1>
+    <!-- Quarter -->
+    <p id="Q">Quarter: 0</p>
+    <button onClick="addCoins('quarter')">+</button>
+    <button onClick="minusCoins('quarter')">-</button>
+    <p>Total Quarters: </p>
+    <!-- Dime -->
+    <p id="D">Dimes: 0</p>
+    <button onClick="addCoins('dime')">+</button>
+    <button onClick="minusCoins('dime')">-</button>
+    <p>Total Dimes: </p>
+    <!-- Nickel -->
+    <p id="N">Nickels: 0</p>
+    <button onClick="addCoins('nickel')">+</button>
+    <button onClick="minusCoins('nickels')">-</button>
+    <p>Total Nickels: </p>
+    <!-- Penny -->
+    <p id="P">Pennys: 0</p>
+    <button onClick="addCoins('penny')">+</button>
+    <button onClick="minusCoins('penny')">-</button>
+    <p>Total Pennys: </p>
+    <h2 id="total">Total Balance: </h2>
+</body>
+</html>
