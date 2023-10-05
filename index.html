@@ -10,38 +10,53 @@
   </head>
   <body>
     <div class="hero">
-      <h1>Count The Money!</h1>
       <div>
-        <!-- Quarter -->
-        <p id="Q">Quarter: 0</p>
-        <p id="QTotal">Quarter Balance:</p>
-        <button onClick="addCoins('quarter')">+</button>
-        <button onClick="minusCoins('quarter')">-</button>
+        <h1>Count The Money!</h1>
       </div>
       <div>
-        <!-- Dime -->
-        <p id="D">Dimes: 0</p>
-        <p id="DTotal">Dime Balance:</p>
-        <button onClick="addCoins('dime')">+</button>
-        <button onClick="minusCoins('dime')">-</button>
-      </div>
-      <div>
-        <!-- Nickel -->
-
-        <p id="N">Nickels: 0</p>
-        <p id="NTotal">Nickel Balance:</p>
-        <button onClick="addCoins('nickel')">+</button>
-        <button onClick="minusCoins('nickel')">-</button>
-      </div>
-      <div>
-        <!-- Penny -->
-        <p id="P">Pennys: 0</p>
-        <p id="PTotal">Penny Balance:</p>
-        <button onClick="addCoins('penny')">+</button>
-        <button onClick="minusCoins('penny')">-</button>
-      </div>
-      <div>
-        <h2 id="total">Total Balance:</h2>
+        <table>
+          <!-- Quarter -->
+          <tr>
+            <th>
+              <p id="Q" class="notButton">Quarter: 0</p>
+            </th>
+            <td><p id="QTotal" class="notButton">Quarter Balance: $0.00</p></td>
+            <td><button onClick="addCoins('quarter')">+</button></td>
+            <td><button onClick="minusCoins('quarter')">-</button></td>
+          </tr>
+          <tr>
+            <!-- Dime -->
+            <th>
+              <p id="D" class="notButton">Dimes: 0</p>
+            </th>
+            <td><p id="DTotal" class="notButton">Dime Balance: $0.00</p></td>
+            <td><button onClick="addCoins('dime')">+</button></td>
+            <td><button onClick="minusCoins('dime')">-</button></td>
+          </tr>
+          <tr>
+            <!-- Nickel -->
+            <th>
+              <p id="N" class="notButton">Nickels: 0</p>
+            </th>
+            <td><p id="NTotal" class="notButton">Nickel Balance: $0.00</p></td>
+            <td><button onClick="addCoins('nickel')">+</button></td>
+            <td><button onClick="minusCoins('nickel')">-</button></td>
+          </tr>
+          <tr>
+            <!-- Penny -->
+            <th>
+              <p id="P" class="notButton">Pennys: 0</p>
+            </th>
+            <td><p id="PTotal" class="notButton">Penny Balance: $0.00</p></td>
+            <td><button onClick="addCoins('penny')">+</button></td>
+            <td><button onClick="minusCoins('penny')">-</button></td>
+          </tr>
+          <tr>
+            <th>
+              <h2 id="total">Total Balance:</h2>
+            </th>
+          </tr>
+        </table>
       </div>
     </div>
   </body>

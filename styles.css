@@ -1,22 +1,38 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "poppins", sans-serif;
   font-size: 25px;
+  text-align: left;
 }
 .hero {
   padding: 20px;
+  height: 100vh;
+}
+div {
+  padding: 10px;
+  background-color: #90ccf4;
 }
 h1 {
   font-size: 50px;
+  color: #fff;
   text-align: center;
+  height: 100px;
+  background-color: #344eac;
+  width: 100%;
 }
 button {
   border-radius: 15px;
   width: 60px;
   height: 40px;
   background-color: transparent;
+  text-align: center;
 }
-div {
-  padding: 10px;
+tr,
+th,
+td {
+  padding: 20px;
+}
+.notButton {
+  width: 275px;
 }

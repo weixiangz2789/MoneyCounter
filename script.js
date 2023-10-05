@@ -19,14 +19,14 @@ const display = () => {
   D.textContent = `Dimes: ${dimes}`;
   N.textContent = `Nickels: ${nickels}`;
   P.textContent = `Pennys: ${pennys}`;
-  QTotal.textContent = `Quarter Balance: ${
+  QTotal.textContent = `Quarter Balance: $${
     Math.round(quarters * 0.25 * 100) / 100
   }`;
-  DTotal.textContent = `Dime Balance: ${Math.round(dimes * 0.1 * 100) / 100}`;
-  NTotal.textContent = `Nickel Balance: ${
+  DTotal.textContent = `Dime Balance: $${Math.round(dimes * 0.1 * 100) / 100}`;
+  NTotal.textContent = `Nickel Balance: $${
     Math.round(nickels * 0.05 * 100) / 100
   }`;
-  PTotal.textContent = `Penny Balance: ${
+  PTotal.textContent = `Penny Balance: $${
     Math.round(pennys * 0.01 * 100) / 100
   }`;
   const sum = quarters * 0.25 + dimes * 0.1 + nickels * 0.05 + pennys * 0.01;
