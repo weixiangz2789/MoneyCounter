@@ -46,6 +46,18 @@ const addCoins = (coin) => {
   if (coin == "penny") {
     pennys++;
   }
+  if (coin == "quarter5") {
+    quarters += 5;
+  }
+  if (coin == "dime5") {
+    dimes += 5;
+  }
+  if (coin == "nickel5") {
+    nickels += 5;
+  }
+  if (coin == "penny5") {
+    pennys += 5;
+  }
   display();
 };
 const minusCoins = (coin) => {
@@ -60,6 +72,18 @@ const minusCoins = (coin) => {
   }
   if (coin == "penny" && pennys >= 1) {
     pennys--;
+  }
+  if (coin == "quarter5" && quarters >= 5) {
+    quarters -= 5;
+  }
+  if (coin == "dime5" && dimes >= 5) {
+    dimes -= 5;
+  }
+  if (coin == "nickel5" && nickels >= 5) {
+    nickels -= 5;
+  }
+  if (coin == "penny5" && pennys >= 5) {
+    pennys -= 5;
   }
   display();
 };
