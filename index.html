@@ -11,59 +11,47 @@
   <body>
     <h1>Count The Money!</h1>
     <div class="hero">
-      <div>
-        <table>
-          <!-- Quarter -->
-          <tr>
-            <th>
-              <p id="Q" class="notButton">Quarter: 0</p>
-            </th>
-            <td><p id="QTotal" class="notButton">Quarter Balance: $0.00</p></td>
-            <td><button onClick="addCoins('quarter')">+</button></td>
-            <td><button onClick="minusCoins('quarter')">-</button></td>
-            <td><button onClick="addCoins('quarter5')">+5</button></td>
-            <td><button onClick="minusCoins('quarter5')">-5</button></td>
-          </tr>
-          <tr>
-            <!-- Dime -->
-            <th>
-              <p id="D" class="notButton">Dimes: 0</p>
-            </th>
-            <td><p id="DTotal" class="notButton">Dime Balance: $0.00</p></td>
-            <td><button onClick="addCoins('dime')">+</button></td>
-            <td><button onClick="minusCoins('dime')">-</button></td>
-            <td><button onClick="addCoins('dime5')">+5</button></td>
-            <td><button onClick="minusCoins('dime5')">-5</button></td>
-          </tr>
-          <tr>
-            <!-- Nickel -->
-            <th>
-              <p id="N" class="notButton">Nickels: 0</p>
-            </th>
-            <td><p id="NTotal" class="notButton">Nickel Balance: $0.00</p></td>
-            <td><button onClick="addCoins('nickel')">+</button></td>
-            <td><button onClick="minusCoins('nickel')">-</button></td>
-            <td><button onClick="addCoins('nickel5')">+5</button></td>
-            <td><button onClick="minusCoins('nickel5')">-5</button></td>
-          </tr>
-          <tr>
-            <!-- Penny -->
-            <th>
-              <p id="P" class="notButton">Pennys: 0</p>
-            </th>
-            <td><p id="PTotal" class="notButton">Penny Balance: $0.00</p></td>
-            <td><button onClick="addCoins('penny')">+</button></td>
-            <td><button onClick="minusCoins('penny')">-</button></td>
-            <td><button onClick="addCoins('penny')">+5</button></td>
-            <td><button onClick="minusCoins('penny')">-5</button></td>
-          </tr>
-          <tr>
-            <th>
-              <h2 id="total">Total Balance:</h2>
-            </th>
-          </tr>
-        </table>
-      </div>
+      <span>
+        <!-- Quarter -->
+        <span class="container">
+          <p id="Q" class="notButton">Quarter: 0</p>
+          <p id="QTotal" class="notButton">Quarter Balance: $0.00</p>
+          <button onClick="addCoins('quarter')">+</button>
+          <button onClick="minusCoins('quarter')">-</button>
+          <button onClick="addCoins('quarter5')">+5</button>
+          <button onClick="minusCoins('quarter5')">-5</button>
+        </span>
+        <!-- Dime -->
+        <span class="container">
+          <p id="D" class="notButton">Dimes: 0</p>
+          <p id="DTotal" class="notButton">Dime Balance: $0.00</p>
+          <button onClick="addCoins('dime')">+</button>
+          <button onClick="minusCoins('dime')">-</button>
+          <button onClick="addCoins('dime5')">+5</button>
+          <button onClick="minusCoins('dime5')">-5</button>
+        </span>
+
+        <!-- Nickel -->
+        <span class="container">
+          <p id="N" class="notButton">Nickels: 0</p>
+          <p id="NTotal" class="notButton">Nickel Balance: $0.00</p>
+          <button onClick="addCoins('nickel')">+</button>
+          <button onClick="minusCoins('nickel')">-</button>
+          <button onClick="addCoins('nickel5')">+5</button>
+          <button onClick="minusCoins('nickel5')">-5</button>
+        </span>
+
+        <!-- Penny -->
+        <span class="container">
+          <p id="P" class="notButton">Pennys: 0</p>
+          <p id="PTotal" class="notButton">Penny Balance: $0.00</p>
+          <button onClick="addCoins('penny')">+</button>
+          <button onClick="minusCoins('penny')">-</button>
+          <button onClick="addCoins('penny5')">+5</button>
+          <button onClick="minusCoins('penny5')">-5</button>
+        </span>
+        <h2 id="total">Total Balance:</h2>
+      </span>
     </div>
   </body>
 </html>
